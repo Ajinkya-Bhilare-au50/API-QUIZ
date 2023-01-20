@@ -1,0 +1,136 @@
+  :root {
+    --header: #42b4a5;
+    --wrongbg: #e94e4e;
+    --questionbg: #ffe388;
+    --questiontxt: #8e773e;
+    --white: #ffffff;
+    --trial: #fff1c4;
+    --pink: #0e5a62;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  .container {
+    background-image: linear-gradient(
+      to right top,
+      #cee6e2,
+      #bdded9,
+      #abd7cf,
+      #9acfc6,
+      #88c7bd
+    );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container2 {
+    background-color: var(--white);
+
+    height: 650px;
+    width: 1000px;
+    border-radius: 15px;
+  }
+  .header {
+    background-color: var(--header);
+    padding: 30px 40px;
+    border-radius: 15px 15px 0 0;
+    color: var(--white);
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 100px;
+  }
+
+  .section {
+    min-height: calc(100% - 75px) !important;
+  }
+
+  .question {
+    color: var(--questiontxt);
+    background-color: var(--trial);
+    margin: 35px 20px;
+    padding: 40px 10px;
+    border-radius: 10px;
+    font-size: larger;
+  }
+  .option {
+    border: 2px solid red;
+    border-color: var(--pink);
+    padding: 15px 10px;
+    color: var(--pink);
+    border-radius: 5px;
+
+    margin: 15px 20px;
+  }
+  .option:hover {
+    color: #ffffff;
+    background-color: var(--pink);
+    cursor: pointer;
+  }
+  .questionNo {
+    background-color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 10px;
+    /* color: var(--header); */
+
+    border: 2px solid var(--header);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -520%);
+  }
+  .icons {
+    margin: 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+  }
+  .next {
+    width: 40px;
+    stroke: #42b4a5;
+    cursor: pointer;
+  }
+  .previous {
+    width: 40px;
+    stroke: #42b4a5;
+    transform: rotate(180deg);
+    cursor: pointer;
+  }
+  .next:hover {
+    stroke: var(--white);
+    fill: var(--header);
+    scale: 1.2;
+  }
+  .previous:hover {
+    stroke: var(--white);
+    fill: var(--header);
+    scale: 1.2;
+  }
+  .submit {
+    padding: 10px 40px;
+    display: inline-block;
+    cursor: pointer;
+    color: var(--header);
+    font-size: larger;
+    background-color: var(--white);
+    border: 2px solid red;
+    border-color: var(--header);
+    border-radius: 5px;
+  }
+  .submit:hover {
+    background-color: var(--header);
+    color: var(--white);
+  }
+  .type{
+    padding-left: 10px;
+    padding-top: 5px;
+    text-transform:capitalize;
+    letter-spacing: 2px;
+    font-weight: bold;
+    
+  }
